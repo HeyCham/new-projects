@@ -1,0 +1,36 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+h2,
+h3 {
+  font-size: 60px;
+  font-weight: 800;
+  color: transparent;
+  background: url('./assets/background.gif');
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+h3 {
+  background: url('./assets/giphy.gif');
+  background-clip: text;
+  -webkit-background-clip: text;
+}

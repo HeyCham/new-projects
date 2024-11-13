@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multiple Step Form Using </title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form action="" id="form1">
+      <h3>Create Your Account</h3>
+      <div class="input-boxes">
+        <input type="email" placeholder="Enter Your Email " required>
+        <input type="password" placeholder="Enter Password" required>
+        <input type="password" placeholder="Confirm Password">
+      </div>
+      <div class="btns">
+        <button type="button" id="Next1">Next</button>
+      </div>
+    </form>
+    
+    <form action="" id="form2">
+      <h3>Social Links</h3>
+      <div class="input-boxes">
+        <input type="text" placeholder="GitHub Page">
+        <input type="text" placeholder="Your Web Link" required>
+        <input type="text" placeholder="Instagram">
+      </div>
+      <div class="btns">
+        <button type="Button" id="Back1">Back</button>
+        <button type="Button" id="Next2">Next</button>
+      </div>
+    </form>
+    <form action="" id="form3">
+      <h3>PERSONAL INFO</h3>
+      <div class="input-boxes">
+        <input type="text" placeholder="Enter First Name " required>
+        <input type="text" placeholder="Enter Last Name " required>
+        <input type="number" placeholder="Enter Phone No." required>
+      </div>
+      <div class="btns">
+        <button type="Button" id="Back2">Back</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <div class="step-row">
+      <div id="progress"></div>
+      <div class="step-col active"><small>Step 1</small></div>
+      <div class="step-col"><small>Step 2</small></div>
+      <div class="step-col"><small>Step 3</small></div>
+    </div> 
+  </div>
+  
+  
+  <script src="./script.js"></script>
+  
+</body>
+
+</html>

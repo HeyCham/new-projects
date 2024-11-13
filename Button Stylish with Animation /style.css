@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body{
+  background: #203136;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+button{
+  height: 50px;
+  width: 140px;
+  font-size: 20px;
+  font-weight: 550;
+  border-radius: 50px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Poppins',sans-serif;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: .9s ;
+  -o-transition: .9s ;
+  transition: .9s ;
+  background: #efefef;
+  outline: 1px solid #505050;
+
+}
+button::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 50px;
+  background: -webkit-gradient(linear,left top, right top,from(#2575FF),to(#64F7FF));
+  background: -o-linear-gradient(left,#2575FF,#64F7FF);
+  background: linear-gradient(90deg,#2575FF,#64F7FF);
+  -webkit-animation: animate-base .6s ;
+          animation: animate-base .6s ;
+  z-index: -1;
+  color: #fff;
+}
+
+button:hover::before{
+  -webkit-animation: animate .6s forwards;
+          animation: animate .6s forwards;
+          
+}
+button:hover{
+  color: #fff;
+  outline: 1px solid #D8F4FF;
+}
+
+@-webkit-keyframes animate {
+  0%{
+    width: 0;
+  }
+  50%{
+    width: 100%;
+  }
+  51%{
+    width: 60%;
+  }
+  55%{
+    width: 70%;
+  }
+  60%{
+    width: 60%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+@keyframes animate {
+  0%{
+    width: 0;
+  }
+  50%{
+    width: 100%;
+  }
+  51%{
+    width: 60%;
+  }
+  55%{
+    width: 70%;
+  }
+  60%{
+    width: 60%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes animate-base {
+  0%{
+    width: 100%;
+  }
+  50%{
+    width: 60%;
+  }
+  51%{
+    width: 70%;
+  }
+  55%{
+    width: 60%;
+  }
+  60%{
+    width: 90%;
+  }
+  100%{
+    width: 0;
+  }
+}
+
+@keyframes animate-base {
+  0%{
+    width: 100%;
+  }
+  50%{
+    width: 60%;
+  }
+  51%{
+    width: 70%;
+  }
+  55%{
+    width: 60%;
+  }
+  60%{
+    width: 90%;
+  }
+  100%{
+    width: 0;
+  }
+}

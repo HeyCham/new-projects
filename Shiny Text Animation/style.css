@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+body {
+  height: 100vh;
+  background: #262a2b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: 'Poppins',sans-serif;
+}
+
+h2 {
+  font-size: 8vw;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #666363), color-stop(10%, #fff), color-stop(20%, #666363));
+  background: -o-linear-gradient(left, #666363 0, #fff 10%, #666363 20%);
+  background: linear-gradient(to right, #666363 0, #fff 10%, #666363 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: animate 5s linear infinite;
+  animation: animate 5s linear infinite;
+}
+
+h2:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position: 0;
+  }
+
+  50% {
+    background-position: 670px;
+  }
+
+  100% {
+    background-position: 670px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0;
+  }
+
+  50% {
+    background-position: 670px;
+  }
+
+  100% {
+    background-position: 670px;
+  }
+}

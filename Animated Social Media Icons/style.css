@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right bottom, from(#A225FF), to(#2E5CFF));
+  background: -o-linear-gradient(top left, #A225FF, #2E5CFF);
+  background: linear-gradient(to bottom right, #A225FF, #2E5CFF);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-animation: rotate 6s linear infinite;
+  animation: rotate 6s linear infinite;
+
+}
+
+.container .up,
+.down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .5rem;
+}
+
+.container .card {
+  height: 90px;
+  width: 90px;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 5px -1px #32325D40;
+  box-shadow: 0 2px 5px -1px #32325D40;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.card i {
+  position: absolute;
+  font-size: 1.4rem;
+  -webkit-animation: rotate-rev 6s linear infinite;
+  animation: rotate-reverse 6s linear infinite;
+
+}
+
+.card:hover i {
+  color: #fff;
+}
+
+.card:hover {
+  scale: 1.1;
+}
+
+.up .card1 {
+  border-radius: 90px 5px 5px 5px;
+}
+
+.card1:hover {
+  background: #EC13A9;
+}
+
+.container:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.container:hover i {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.card1 i {
+  right: 25px;
+  bottom: 25px;
+  color: #EC13A9;
+}
+
+.card2:hover {
+  background: #1A8FFF;
+}
+
+.up .card2 {
+  border-radius: 5px 90px 5px 5px;
+}
+
+.card2 i {
+  left: 25px;
+  bottom: 25px;
+  color: #1A8FFF;
+}
+
+.card3:hover {
+  background: #1A1C1E;
+}
+
+.down .card3 {
+  border-radius: 5px 5px 5px 90px;
+}
+
+.card3 i {
+  right: 25px;
+  top: 25px;
+  color: black;
+}
+
+.down .card4 {
+  border-radius: 5px 5px 90px 5px;
+}
+
+.card4:hover {
+  background: #8497FF;
+}
+
+.card4 i {
+  left: 25px;
+  top: 25px;
+  color: #8c9eff;
+}
+
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate-rev {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotate-reverse{
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}

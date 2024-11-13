@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --background-color: #2990FF;
+}
+
+body {
+  height: 100vh;
+  background: #D9E3FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.pules {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: var(--background-color);
+  position: relative;
+  cursor: pointer;
+  -webkit-animation: pules 2s linear infinite;
+  animation: pules 2s linear infinite;
+}
+/* If you want to animate on Hover then check this one*/
+/* .pules:hover{
+   animation: pules 2s linear infinite; 
+} */
+
+.pules::before,
+.pules::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.1);
+}
+
+.pules::before {
+  height: 5px;
+  width: 40px;
+}
+
+.pules::after {
+  height: 40px;
+  width: 5px;
+}
+
+@-webkit-keyframes pules {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 hsla(211, 100%, 58%, 0.5);
+    box-shadow: 0 0 0 0 hsla(211, 100%, 58%, 0.5);
+  }
+
+  5% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  15% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  70% {
+    -webkit-box-shadow: 0 0 0 50px hsla(211, 100%, 58%, 0);
+    box-shadow: 0 0 0 50px hsla(211, 100%, 58%, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 100px hsla(211, 100%, 58%, 0);
+    box-shadow: 0 0 0 100px hsla(211, 100%, 58%, 0);
+  }
+}
+
+@keyframes pules {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 hsla(211, 100%, 58%, 0.5);
+    box-shadow: 0 0 0 0 hsla(211, 100%, 58%, 0.5);
+  }
+
+  5% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  15% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  70% {
+    -webkit-box-shadow: 0 0 0 50px hsla(211, 100%, 58%, 0);
+    box-shadow: 0 0 0 50px hsla(211, 100%, 58%, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 100px hsla(211, 100%, 58%, 0);
+    box-shadow: 0 0 0 100px hsla(211, 100%, 58%, 0);
+  }
+}
+

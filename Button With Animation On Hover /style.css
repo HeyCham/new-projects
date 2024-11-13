@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: #212A3F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  background: #081D36;
+  background: #E6F3FF;
+}
+
+.btn {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 550;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-transform: uppercase;
+  background: #DEEDFF;
+  -webkit-box-shadow: 2px 10px 10px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 10px 10px -1px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.btn::before,
+.btn::after {
+  content: '';
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(#17EFFF), to(#1784FF));
+  background: -o-linear-gradient(left, #17EFFF, #1784FF);
+  background: linear-gradient(to right, #17EFFF, #1784FF);
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.btn::before {
+  right: -19px;
+  top: -35px;
+}
+
+.btn::after {
+  left: -19px;
+  bottom: -35px;
+}
+
+.btn:hover::before {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  border-radius: 50px;
+}
+
+.btn:hover::after {
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 50px;
+}
+
+.btn:hover {
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 480px) {
+  .btn {
+    padding: .6rem 1.5rem;
+  }
+}

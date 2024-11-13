@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #7589AD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+button {
+  height: 55px;
+  width: 170px;
+  font-size: 19px;
+  border-radius: 40px;
+  border: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  overflow: hidden;
+  background: #efefef;
+  letter-spacing: 2px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+}
+
+button::before,
+button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  z-index: -1;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+button::before {
+  background: #202020;
+  left: 0;
+  border-radius: 40px 0 0 40px;
+}
+
+button::after {
+  background: #1D1D1D;
+  right: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+button:hover::before,
+button:hover::after {
+  width: 50%;
+}
+
+button:hover {
+  -webkit-transition-delay: .2s;
+  -o-transition-delay: .2s;
+  transition-delay: .2s;
+  color: #8DB6FF;
+}
+

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #271C40;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.input-wrapper {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #DAEBFF;
+  height: 60px;
+  width: 0px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+
+}
+
+.input-wrapper input {
+  width: 0px;
+  height: 60px;
+  background: none;
+  border: 0;
+  outline: none;
+  opacity: 0;
+  font-size: 16px;
+  padding: 0 22px;
+  line-height: 60px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.input-wrapper .search__btn {
+  display: inline-block;
+  position: absolute;
+  right: -35px;
+  top: 0;
+  height: 60px;
+  width: 60px;
+  background: #DAEBFF;
+  border-radius: 50%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-decoration: none;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.input-wrapper .search__btn i {
+  font-size: 20px;
+  color: #9526FF;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+
+.input-wrapper:hover {
+  width: 330px;
+}
+
+.input-wrapper:hover input {
+  width: 270px;
+  opacity: 1;
+  -webkit-transition-delay: .3s;
+  -o-transition-delay: .3s;
+  transition-delay: .3s;
+}
+
+.input-wrapper:hover .search__btn {
+  background: #9526FF;
+  color: #fff;
+  right: 0.5px;
+}
+
+.input-wrapper:hover .search__btn i {
+  color: #fff;
+}
+

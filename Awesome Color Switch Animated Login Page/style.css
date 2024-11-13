@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary-color: #249FFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #D3E1FF;
+  background: -o-radial-gradient(circle, #D6E3FF, #BDD2FF);
+  background: radial-gradient(circle, #D6E3FF, #BDD2FF);
+  /* background: var(--primary-color); */
+  /*Comment off if you also want to change body background color when click color palettes*/
+  padding: 10px;
+}
+
+.wrapper {
+  background: #fff;
+  max-width: 330px;
+  width: 100%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  margin: 1.5rem 1rem;
+}
+
+form h2 {
+  margin: 0 0 1.6rem 1.5rem;
+  position: relative;
+  font-weight: 540;
+}
+
+form h2::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 3px;
+  height: 25px;
+  width: 13px;
+  background: var(--primary-color);
+  border-radius: 1px;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+.input_box {
+  height: 50px;
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+  border-radius: 5px;
+}
+
+.input_box input {
+  height: 100%;
+  width: 100%;
+  padding: 0 10px;
+  line-height: 50px;
+  border-radius: 5px;
+  border: 1px solid #818181;
+  outline: 0;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+.input_box input:focus {
+  border-color: var(--primary-color);
+}
+
+.login_btn {
+  height: 45px;
+  width: 100%;
+  margin: 10px auto;
+  font-size: 17px;
+  background: var(--primary-color);
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+.login_btn:hover {
+  -webkit-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  transform: scale(0.99);
+  opacity: 0.95;
+}
+
+.not_account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 10px 4px 0;
+}
+
+.not_account a {
+  text-decoration: none;
+  display: block;
+  color: #6A6A6A;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.not_account a:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.color__palette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  margin: 1rem auto;
+  background: #fff;
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+
+.color__palette span {
+  height: 30px;
+  width: 30px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.color__palette span:nth-child(1) {
+  background: #22FFCC;
+  background: #249FFF;
+}
+
+.color__palette span:nth-child(2) {
+  background: #FF5757;
+}
+
+.color__palette span:nth-child(3) {
+  background: #22F0FF;
+}
+
+.color__palette span:nth-child(4) {
+  background: #FFA222;
+}
+
+.color__palette span:nth-child(5) {
+  background: #BF22FF;
+}
+
+span.active {
+  outline: 1.5px solid #6F6F6F;
+  outline-offset: 2px;
+  -webkit-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+@media screen and (min-width: 668px) {
+  body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+  }
+
+  .color__palette {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 20px 15px;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    -webkit-transform: translate(-10%, -50%);
+    -ms-transform: translate(-10%, -50%);
+    transform: translate(-10%, -50%);
+  }
+}

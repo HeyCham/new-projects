@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --background-color: #9d40e4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #F9F0FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Nunito', sans-serif;
+}
+
+.strip {
+  width: 100%;
+  background: #C35CFF;
+  background: var(--background-color);
+}
+
+.top_strip {
+  height: 65px;
+  position: fixed;
+  top: 0;
+}
+
+.button_strip {
+  height: 33px;
+  position: fixed;
+  bottom: 0;
+}
+
+.container {
+  height: calc(100vh - 65px);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.profile__card-container {
+  max-width: 335px;
+  width: 100%;
+  background: var(--background-color);
+  border-radius: 20px;
+  padding-inline: 18px;
+  padding-block: 32px 22px;
+  position: relative;
+
+}
+
+.circle {
+  border-radius: 50%;
+  position: absolute;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(0%, #9C45DE), to(#A453EC));
+  background-image: -o-linear-gradient(0, #9C45DE 0%, #A453EC 100%);
+  background-image: linear-gradient(0, #9C45DE 0%, #A453EC 100%);
+
+}
+
+.circle1 {
+  width: 160px;
+  height: 160px;
+  top: 15px;
+  right: 30px;
+}
+
+.circle2 {
+  height: 90px;
+  width: 90px;
+  top: 95px;
+  left: 10px;
+}
+
+.top_icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.top_icons-container i {
+  background: #DEDEDE1A;
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 18px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.top_icons-container i:active {
+  -webkit-transform: scale(0.97);
+  -ms-transform: scale(0.97);
+  transform: scale(0.97);
+}
+
+.profile__details-container {
+  background: #fff;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 60px;
+  position: relative;
+}
+
+.profile__details-container .avatar {
+  height: 108px;
+  width: 108px;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-top: -60px;
+  position: relative;
+}
+
+.avatar img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 7px solid #fff;
+}
+
+.green_dot {
+  height: 15px;
+  width: 15px;
+  background: #62FF6E;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  border: 3px solid #fff;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.heading_name {
+  font-size: 21px;
+  margin-block: 5px 0;
+}
+
+.sub-title {
+  color: #8D8D8D;
+  font-size: 15px;
+}
+
+.view__profile-btn {
+  display: inline-block;
+  border: 1px solid var(--background-color);
+  color: #4F4F4F;
+  padding: 8px 15px;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-radius: 30px;
+  margin: 15px 0 10px 0;
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.view__profile-btn:hover {
+  background: var(--background-color);
+  color: #fff;
+  font-weight: 600;
+}
+
+.horizontal__line {
+  height: 2px;
+  width: calc(100%);
+  background: #D9D9D93D;
+  margin: 15px auto 5px auto;
+}
+
+.social__icons {
+  display: inline-block;
+  margin-block: 3px 1px;
+
+}
+
+.social__icons i {
+  font-size: 20px;
+  color: #3EACFF;
+  color: var(--background-color);
+  cursor: pointer;
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.social__icon+.social__icon {
+  margin-left: 8px;
+}
+
+.fa-linkedin:hover {
+  color: #11B3FF;
+  scale: 1.05;
+}
+
+.fa-twitter:hover {
+  color: #1BBDF6;
+  scale: 1.05;
+}
+
+.fa-github:hover {
+  color: #1B2023;
+  scale: 1.05;
+}

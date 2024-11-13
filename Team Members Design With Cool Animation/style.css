@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #f2f2fe;
+  padding: 1rem;
+}
+
+.row {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.col {
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+  position: relative;
+}
+
+.col img {
+  width: 100%;
+}
+
+.col .info {
+  position: absolute;
+  padding: 10px 0;
+  width: 90%;
+  background: #0B0B0B;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: -50px;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  -o-transition: box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
+}
+
+.info h2 {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.info p {
+  font-size: 12px;
+  margin: 6px 0;
+}
+
+.icons .fab {
+  font-size: 20px;
+  padding: 10px 8px;
+  cursor: pointer;
+}
+
+.fa-instagram {
+  color: #e95950;
+}
+
+.fa-facebook {
+  color: #5088fb;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.icons {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 1s;
+  -o-transition: max-height 1s;
+  transition: max-height 1s;
+}
+
+.col:hover .icons {
+  max-height: 100px;
+}
+
+.col:hover .info {
+  -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+}
+
+.pics {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.layer {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 5px;
+  border-bottom: 2px solid crimson;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 1s;
+  -o-transition: max-height 1s;
+  transition: max-height 1s;
+}
+
+.col:hover .layer {
+  max-height: 100%;
+}
+
+@media screen and (max-width: 1008px) {
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+

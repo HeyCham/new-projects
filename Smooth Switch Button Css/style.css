@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --background-color: #ECEDFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button_box{
+  width: 390px;
+  height: 65px;
+  background: #fff;
+  border-radius: 40px;
+  position: relative;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  z-index: 1;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+
+.toggle_button{
+  width: 130px;
+  height: 65px;
+  margin: 0 auto;
+  border: 0;
+  font-size: 20px;
+  background: transparent;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.button_box .btn{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #06E9FF;
+  height: 65px;
+  width: 130px;
+  border-radius: 40px;
+  z-index: -1;
+  cursor: pointer;
+  transition: all .4s ease;
+}

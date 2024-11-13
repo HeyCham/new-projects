@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Multiple Steps Progress Bar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="steps">
+      <span class="circles active">1</span>
+      <span class="circles">2</span>
+      <span class="circles">3</span>
+      <span class="circles">4</span>
+      
+      <div class="progress__bar">
+        <div id="indicator"></div>
+      </div>
+    </div>
+    <div class="button">
+      <button id="prev" disabled>Prev.</button>
+      <button id="next">Next</button>
+    </div>
+  </div>
+  
+  <script src="./script.js"></script>
+</body>
+</html>

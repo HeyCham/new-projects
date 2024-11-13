@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* --border-color: #FF1B86; */
+  --border-color: #1BB1FF;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: #1E1F2E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.btn {
+  font-size: 20px;
+  height: 55px;
+  width: 110px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-top: 3px solid var(--border-color);
+  border-bottom: 3px solid var(--border-color);
+  border-left: transparent;
+  border-right: transparent;
+  position: relative;
+  border-radius: 3px;
+  background: #F9FBFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.btn::before,
+.btn::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  top: -3px;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background: #F9FBFF;
+  border: 3px solid #ddd;
+  z-index: -1;
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.btn::before {
+  left: -25px;
+  border-left-color: var(--border-color);
+  border-bottom-color: var(--border-color);
+}
+
+.btn::after {
+  right: -25px;
+  border-right-color: var(--border-color);
+  border-top-color: var(--border-color);
+}
+
+.btn:hover {
+  width: 115px;
+  letter-spacing: 4px;
+}
+
+.btn:hover::before,
+.btn:hover::after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-box-shadow: 0 10px 40px -10px var(--border-color);
+  box-shadow: 0 10px 40px -10px var(--border-color)
+}

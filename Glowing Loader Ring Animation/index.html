@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Glowing Loader Ring Animation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="ring">Loading
+    <span class="dots"></span>
+    <span class="dots"></span>
+    <span class="dots"></span>
+    <span class="ring_circle"></span>
+  </div>
+
+
+
+  <!--for blinking Dot-->
+  
+  <script>
+    const dots = document.querySelectorAll('.dots');
+
+    function displayDots() {
+      dots.forEach((dot, index) => {
+        setTimeout(() => {
+          dot.style.display = 'inline-block';
+          // Show the dot after a delay
+        }, index * 1000); // Delay each dot by its index times 1000 milliseconds (1 second)
+      });
+
+      // Hide all dots after they have been displayed
+      setTimeout(() => {
+        dots.forEach(dot => dot.style.display = 'none');
+        displayDots(); // Restart the animation
+      }, dots.length * 1000); // After all dots have been displayed, wait for dots.length * 1000 milliseconds (1 second) before hiding and restarting the animation
+    }
+
+    // Start the animation
+    displayDots();
+  </script>
+</body>
+
+</html>

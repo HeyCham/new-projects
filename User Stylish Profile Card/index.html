@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>User Stylish Profile Card </title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <div class="strip top_strip"></div>
+
+  <div class="container">
+    <div class="profile__card-container">
+      <div class="circle circle1"></div>
+      <div class="circle circle2"></div>
+      <div class="top_icons-container">
+        <i class="heart fa fa-heart"></i>
+        <i onclick="navigator.share({url: location.href})"  class="share fa fa-share"></i>
+
+      </div>
+      <div class="profile__details-container">
+        <div class="avatar">
+          <img src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+          <div class="green_dot"></div>
+        </div>
+        <h2 class="heading_name">Cham Marchant</h2>
+        <p class="sub-title">Frontend Developer</p>
+        <a href="#" class="view__profile-btn">view full profile</a>
+        <div class="horizontal__line"></div>
+        <div class="social__icons ">
+          <a href="#" class="social__icon"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="social__icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social__icon github"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="strip button_strip"></div>
+</body>
+
+</html>

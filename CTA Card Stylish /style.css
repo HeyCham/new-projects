@@ -1,0 +1,91 @@
+ @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Outfit',sans-serif;
+}
+
+body{
+  height: 100vh;
+  background: #2E3A43;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wrapper{
+  height: 70px;
+  width: 300px;
+  background: #F5FBFF;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+img{
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin: 3px 0 0 5px;
+  border: 2px solid #F5FBFF;
+}
+.details{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  left: 24%;
+  margin-bottom: 5px;
+}
+.details p:first-child{
+  float: left;
+  font-size: 1.3rem;
+  display: block;
+  color: #2A2A2A;
+  margin-bottom: -3px;
+  border-bottom: 1px solid #E4E4E4;
+  font-weight: 700;
+}
+.details p{
+  color: #4E4E4E;
+  font-size: 13px;
+  margin-top: 2px;
+}
+a{
+  text-decoration: none;
+  margin-right: 1rem;
+  font-size: 16px;
+  background: #34AAFF;
+  color: #fff;
+  padding: 6px 15px;
+  border-radius: 40px;
+  cursor: pointer;
+  -webkit-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+a:hover{
+  scale: 0.97;
+  opacity: 0.8;
+}

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ebebf1;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.btn {
+  width: 380px;
+  margin: 30px;
+  height: 110px;
+  font-size: 3rem;
+  border-radius: 50px;
+  border: 0;
+  background: #ebebf1;
+  text-transform: capitalize;
+  font-weight: 500;
+  -webkit-box-shadow: 10px 10px 10px -1px rgba(10, 19, 169, 0.16),
+    -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+  box-shadow: 10px 10px 10px -1px rgba(10, 19, 169, 0.16),
+    -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+  color: #00a037;
+  font-family: 'Poppins', sans-serif;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.reject {
+  color: #ED0000;
+  -webkit-box-shadow: inset 10px 10px 10px -1px rgba(10, 19, 169, 0.16),
+    inset -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+  box-shadow: inset 10px 10px 10px -1px rgba(10, 19, 169, 0.16),
+    inset -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.accept:hover {
+  background: hsla(141, 100%, 31%, 0.05);
+  -webkit-box-shadow: inset 10px 10px 10px -1px rgba(10, 19, 169, 0.16),
+    inset -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+  box-shadow: inset 10px 10px 10px -1px rgba(10, 19, 169, 0.16),
+    inset -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+  scale: 0.97;
+}
+
+.reject:hover {
+  background: hsla(0, 100%, 52%, 0.05);
+  -webkit-box-shadow: 10px 10px 10px -1px rgba(10, 19, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+  box-shadow: 10px 10px 10px -1px rgba(10, 19, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+  scale: 0.97;
+
+}
+
+.btn i {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .btn {
+    font-size: 2.5rem;
+    height: 90px;
+    width: 300px;
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn {
+    font-size: 2rem;
+    width: 270px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .btn {
+    font-size: 1.7rem;
+    width: 240px;
+  }
+}

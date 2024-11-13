@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --background-color: #23253C;
+  --red-background-color: #FF2828;
+  --green-background-color: #1AD103;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: var(--background-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+input {
+  display: none;
+}
+
+.btns {
+  height: 50px;
+  width: 130px;
+  background: var(--red-background-color);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.btns label {
+  width: 65px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 500;
+  z-index: 5;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.btns .toggle_btn {
+  height: 47px;
+  width: 65px;
+  background: #fff;
+  position: absolute;
+  left: 1.5%;
+  border-radius: 5px;
+  z-index: -1;
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+#button_on:checked~.btns {
+  background: var(--green-background-color);
+}
+
+#button_on:checked~.btns #on_btn {
+  color: var(--green-background-color);
+}
+
+#button_off:checked~.btns>.toggle_btn {
+  left: 2px;
+
+}
+
+#button_off:checked~.btns #off_btn {
+  color: var(--red-background-color);
+}
+#button_on:checked~.btns>.toggle_btn {
+  left: 48.5%;
+
+}

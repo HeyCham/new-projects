@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Outfit',sans-serif;
+}
+
+body{
+  height: 100vh;
+  background: #314451;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wrapper{
+  height: 250px;
+  width: 300px;
+  background: #E6E6E6;
+  border-radius: 10px;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+h2{
+  width: 100%;
+  padding: 9px;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  font-size: 2rem;
+  background: #0C9BFF;
+  border-radius: 10px 10px 0 0;
+  color: #F0F9FF;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.show-conut h1{
+  font-size: 4rem;
+  margin: 0 0 1.3rem 0;
+  color: #373737;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.btns{
+  position: absolute;
+  bottom: 0;
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.plus,.minus,.reset{
+  padding: 8px 20px;
+  font-size: 1.2rem;
+  border-radius: 2px;
+  border: 1px solid #5B5B5B;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.plus{
+  background: #2142D7;
+  color: #fff;
+}
+.minus{
+  background: #FF9999;
+  color: #fff;
+}
+button{
+  border: 0;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+
+}
+.reset{
+  background: #6CD53F;
+  color: #fff;
+}
+button:hover{
+  scale: 0.97;
+  opacity: 0.8;
+}

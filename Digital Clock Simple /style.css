@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #446479;
+}
+
+.wrapper {
+  height: 150px;
+  width: 300px;
+  background: #efefef;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  -webkit-box-shadow: 0 0 10px 0 #282828;
+  box-shadow: 0 0 10px 0 #282828;
+}
+
+.heading {
+  position: absolute;
+  display: block;
+  top: 0;
+  width: 100%;
+  font-weight: 609;
+  background: #3DB1FF;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.heading h1 {
+  margin: 10px;
+  font-size: 1.8rem;
+  color: #E8F6FF;
+  letter-spacing: 1px;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.show-time {
+  margin-top: 3rem;
+}
+
+span {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #414141;
+  font-family: 'Outfit', 'Poppins', sans-serif;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
+}

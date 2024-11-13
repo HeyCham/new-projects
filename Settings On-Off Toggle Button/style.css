@@ -1,0 +1,155 @@
+body {
+  height: 100vh;
+  background: #222425;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.toggle__button {
+  -webkit-appearance: none;
+  height: 38px;
+  width: 65px;
+  background: #686868;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.toggle__button::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 15px;
+  width: 15px;
+  outline: 4px solid #fff;
+  border-radius: 50%;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+
+
+  /* animation: animate-base .3s linear backwards; */
+
+}
+
+.toggle__button:checked::before {
+
+  left: 37px;
+  outline: none;
+  background: #fff;
+  height: 22px;
+  width: 22px;
+
+}
+
+/* This toggle using animation check once after comment out*/
+
+.toggle__button:checked::before {
+  /* animation: animate .3s linear forwards; */
+
+}
+
+.toggle__button:checked {
+  background: #FF7474;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    width: 15px;
+  }
+
+  50% {
+    width: 30px;
+    left: 20px;
+    outline: none;
+    background: #fff;
+  }
+
+  100% {
+    height: 22px;
+    width: 22px;
+    left: 38px;
+    background: #fff;
+    outline: none;
+  }
+}
+
+@keyframes animate {
+  0% {
+    width: 15px;
+  }
+
+  50% {
+    width: 30px;
+    left: 20px;
+    outline: none;
+    background: #fff;
+  }
+
+  100% {
+    height: 22px;
+    width: 22px;
+    left: 38px;
+    background: #fff;
+    outline: none;
+  }
+}
+
+@-webkit-keyframes animate-base {
+  0% {
+    height: 22px;
+    width: 22px;
+    left: 38px;
+    background: #fff;
+    outline: none;
+  }
+
+  50% {
+    width: 30px;
+    left: 20px;
+    outline: none;
+    background: #fff;
+  }
+
+  100% {
+    width: 15px
+  }
+}
+
+@keyframes animate-base {
+  0% {
+    height: 22px;
+    width: 22px;
+    left: 38px;
+    background: #fff;
+    outline: none;
+  }
+
+  50% {
+    width: 30px;
+    left: 20px;
+    outline: none;
+    background: #fff;
+  }
+
+  100% {
+    width: 15px
+  }
+}

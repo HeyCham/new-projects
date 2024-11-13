@@ -1,0 +1,91 @@
+:root {
+  --background-color: #23313F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: var(--background-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.box {
+  height: 400px;
+  width: 330px;
+  background: #182132;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #DBE7FF;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+  height: 150%;
+  width: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#C518FF), to(#184DFF));
+  background: -o-linear-gradient(#C518FF, #184DFF);
+  background: linear-gradient(#C518FF, #184DFF);
+  -webkit-animation: animate 3s ease infinite;
+  animation: animate 3s ease infinite;
+  -webkit-box-shadow: 0 0 100px 0 #21365C, 0 0 100px #0E1324;
+  box-shadow: 0 0 100px 0 #21365C, 0 0 100px #0E1324;
+  z-index: -2;
+
+}
+
+@-webkit-keyframes animate {
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(45deg) rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(45deg) rotate(360deg);
+    filter: hue-rotate(-360deg);
+  }
+}
+
+.box::after {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  background: #182132;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.box:hover::before {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
